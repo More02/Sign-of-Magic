@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\VFX\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Scripts\HtcViveInput.cs" />
      <Compile Include="Assets\VFX\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterTile.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\SpecularLighting.cs" />
@@ -59,7 +60,6 @@
      <Compile Include="Assets\VFX\ParticleSystems\Scripts\WaterHoseParticles.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\VFX\ParticleSystems\Scripts\Hose.cs" />
-     <Compile Include="Assets\Scripts\HtcViveInput.cs" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />
