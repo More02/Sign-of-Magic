@@ -249,7 +249,10 @@ MonoBehaviour:
   _touchPos:
     actionPath: /actions/default/in/TouchPos
     needsReinit: 0
-  _speed: 12
+  _touchPad:
+    actionPath: /actions/default/in/TouchPad
+    needsReinit: 0
+  _speed: 9
 --- !u!1 &146008185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9,
