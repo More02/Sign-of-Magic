@@ -14,30 +14,33 @@ public class HtcViveInput : MonoBehaviour
     [SerializeField] 
     private float _speed = 12f;
 
+    private bool _isClicked;
+
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
+        _touchPad.AddOnStateDownListener(GetTouchpadClickedDown, _hand);
+        _touchPad.AddOnStateUpListener(GetTouchpadClickedUp, _hand);
+        _touchPos.AddOnChangeListener(GetTouchpadPosition, _hand);
     }
-    
-    private Vector2 GetTrackPadPos()
+
+    private void GetTouchpadClickedDown(SteamVR_Action_Boolean touchPad, SteamVR_Input_Sources hand)
     {
+        _isClicked = _touchPad.GetState(_hand);
+    }
+
+    private void GetTouchpadClickedUp(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
+    {
+        _isClicked = false;
+    }
+
+    private void GetTouchpadPosition(SteamVR_Action_Vector2 fromAction, SteamVR_Input_Sources fromSource, Vector2 axis,
+        Vector2 delta)
+    {
+        if (!_isClicked) return;
         _vectorFromHand = _touchPos.GetAxis(_hand);
-        return _touchPos.GetAxis(_hand);
-    }
-
-    private bool GetTouchPad()
-    {
-        return _touchPad.GetState(_hand);
-    }
-
-    public void Update()
-    {
-        if (!GetTouchPad()) return;
-        GetTrackPadPos();
         if (((!(_vectorFromHand.y > 0.7f)) && (!(_vectorFromHand.y < -0.7f)) && (!(_vectorFromHand.x > 0.7f)) &&
              (!(_vectorFromHand.x < -0.7f)))) return;
-        var vectorFromHandV3 = new Vector3(-_vectorFromHand.x, 0, -_vectorFromHand.y);
-        _characterController.Move(vectorFromHandV3 * (_speed * Time.deltaTime));
-        print("Moving");
+        Movement.Move(_vectorFromHand, _characterController, _speed);
     }
 }
