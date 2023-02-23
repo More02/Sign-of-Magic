@@ -4,6 +4,7 @@ using Valve.VR;
 [RequireComponent(typeof(SteamVR_TrackedObject))]
 public class Movement : MonoBehaviour
 {
+    
     // SteamVR_TrackedObject trackedObj;
     // SteamVR_Controller.Device device;
     //
