@@ -334,25 +334,25 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Valve.Newtonsoft.Json">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Assets\Plugins\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Assets\Plugins\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -727,127 +727,127 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenVR">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="PPv2URPConverters">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Runtime">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Subsystem.Registration">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Postprocessing.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenVR.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Postprocessing.Runtime">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>D:\универ\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\univer\IT Lab\Sign-of-Magic\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

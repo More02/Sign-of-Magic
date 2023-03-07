@@ -8,6 +8,8 @@ public class HtcViveInput : MonoBehaviour
     private SteamVR_Action_Vector2 _touchPos;
     [SerializeField] 
     private SteamVR_Action_Boolean _touchPad;
+    [SerializeField] 
+    private Transform _cameraTransform;
 
     private Vector2 _vectorFromHand = new Vector2(0, 0);
     private CharacterController _characterController;
@@ -41,6 +43,6 @@ public class HtcViveInput : MonoBehaviour
         _vectorFromHand = _touchPos.GetAxis(_hand);
         if (((!(_vectorFromHand.y > 0.7f)) && (!(_vectorFromHand.y < -0.7f)) && (!(_vectorFromHand.x > 0.7f)) &&
              (!(_vectorFromHand.x < -0.7f)))) return;
-        Movement.Move(_vectorFromHand, _characterController, _speed);
+        Movement.Move(_vectorFromHand, _characterController, _speed, _cameraTransform);
     }
 }
