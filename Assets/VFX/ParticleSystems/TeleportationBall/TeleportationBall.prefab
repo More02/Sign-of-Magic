@@ -4825,6 +4825,7 @@ GameObject:
   - component: {fileID: 4708748773110609185}
   - component: {fileID: 3809574251162723172}
   - component: {fileID: 3809574251162723173}
+  - component: {fileID: -9203834087538632066}
   m_Layer: 0
   m_Name: TeleportationBall
   m_TagString: Untagged
@@ -4859,7 +4860,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.25
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &4708748773110609185
 Rigidbody:
@@ -9665,3 +9666,17 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-9203834087538632066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3809574251162723174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d75d1b32cdfa2a439027a428335faa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifeTime: 10
+  _speed: 15

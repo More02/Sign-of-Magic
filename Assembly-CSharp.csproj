@@ -52,6 +52,10 @@
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterBase.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\MeshContainer.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Scripts\Spells\ProjectileSpell.cs" />
+     <Compile Include="Assets\Scripts\Spells\TeleportationSpell.cs" />
+     <Compile Include="Assets\Scripts\Spells\DamagingProjectile.cs" />
+     <Compile Include="Assets\Scripts\Spells\SpellCreator.cs" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />
