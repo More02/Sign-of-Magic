@@ -48,30 +48,32 @@ namespace VR
         private void OnLeftTriigerDown(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
             _leftTimer = Time.time;
-            _leftCast = CastSpell(_leftCast, _leftSpellTransform);
+            _leftSpell = CastSpell(_leftCast, _leftSpellTransform);
         }
 
         private void OnLeftTriigerUp(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
-            if (Time.time < _leftTimer + _leftSpell.GetComponent<ProjectileSpell>().TimeToCast) return;
-            Instantiate(_leftSpell, _leftSpellTransform, true);
+            var spell = Instantiate(_rightProjectile, _leftSpellTransform.position, _leftSpellTransform.rotation);
+            if (Time.time < _leftTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
+            Destroy(_leftSpell);
         }
     
         private void OnRightTriigerDown(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
             _rightTimer = Time.time;
-            _rightCast = CastSpell(_rightCast, _rightSpellTransform);
+            _rightSpell = CastSpell(_rightCast, _rightSpellTransform);
         }
 
         private void OnRightTriigerUp(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
-            if (Time.time < _rightTimer + _rightSpell.GetComponent<ProjectileSpell>().TimeToCast) return;
-            Instantiate(_rightSpell, _rightSpellTransform, true);
+            var spell = Instantiate(_rightProjectile, _rightSpellTransform.position, _rightSpellTransform.rotation);
+            if (Time.time < _rightTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
+            Destroy(_rightSpell);
         }
     
         private GameObject CastSpell(GameObject spellCast, Transform castTransform)
         {
-            var castSpell = Instantiate(spellCast, castTransform, true);
+            var castSpell = Instantiate(spellCast, castTransform);
             //castSpell.transform.localScale = Vector3.one;
             return castSpell;
         }

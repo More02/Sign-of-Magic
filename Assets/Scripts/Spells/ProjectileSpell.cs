@@ -11,7 +11,7 @@ namespace Spells
         [SerializeField]
         private float _lifeTime = 10f;
         [SerializeField]
-        protected float _speed = 15f;
+        protected float _speed = 5f;
 
         public float TimeToCast
         {
