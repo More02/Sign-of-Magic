@@ -17,7 +17,7 @@ namespace Spells
             if (_character is not null)
             {
                 var teleportPoint = transform.position;
-                teleportPoint.y += 1.8f;
+                teleportPoint.y += _character.GetComponent<CharacterController>().height / 2;
                 _character.position = teleportPoint;
             }
             else

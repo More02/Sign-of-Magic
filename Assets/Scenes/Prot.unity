@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.218
   m_CustomReflection: {fileID: 8900000, guid: dc383fcb324f6734e9aa57fbe7fb8533, type: 2}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.22129914, g: 0.27081135, b: 0.29577047, a: 0.218}
+  m_IndirectSpecularColor: {r: 0.22126338, g: 0.27080658, b: 0.29578722, a: 0.218}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1462,6 +1462,27 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &911633463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911633458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f685f83de5e46714799bdd10465ce9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabPinch:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+  _leftProjectile: {fileID: 0}
+  _leftCast: {fileID: 0}
+  _rightProjectile: {fileID: 6097730986717892632, guid: b12ce69ecd68ef844ad92796bf557500,
+    type: 3}
+  _rightCast: {fileID: 1748128064598519429, guid: 7651cf4c04409e34b993382f98b671b9,
+    type: 3}
 --- !u!1 &930406482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1397780466808792810, guid: 3781a3803ccf3cc469730fda393c13a5,
@@ -3424,11 +3445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.286
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -8.424
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalRotation.w

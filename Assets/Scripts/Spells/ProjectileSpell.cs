@@ -7,10 +7,17 @@ namespace Spells
     public abstract class ProjectileSpell : MonoBehaviour
     {
         [SerializeField]
+        private float _timeToCast = 1f;
+        [SerializeField]
         private float _lifeTime = 10f;
         [SerializeField]
-        protected float _speed = 15f;
+        protected float _speed = 50f;
 
+        public float TimeToCast
+        {
+            get => _timeToCast;
+            set => _timeToCast = value;
+        }
         protected abstract void PerformSpellAction();
 
         protected void Start()
