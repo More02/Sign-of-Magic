@@ -31,7 +31,7 @@ namespace Spells
         {
             base.OnCollisionEnter(collision);
             if (!collision.gameObject.TryGetComponent<Lava>(out var lava)) return;
-            Instantiate(lava.Stone, collision.contacts[0].point, Quaternion.identity);s
+            Instantiate(lava.Stone, collision.contacts[0].point, Quaternion.identity);
         }
     }
 }
