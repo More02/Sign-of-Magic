@@ -9,7 +9,7 @@ namespace Spells
         
         protected override void PerformSpellAction()
         {
-            if (_target is not null)
+            if (target is not null)
             {
                 //TODO
             }

@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Displace.cs" />
+     <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
      <Compile Include="Assets\Terrain\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Scripts\Spells\SpellCreator.cs" />
@@ -53,32 +54,56 @@
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterTile.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\SpecularLighting.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\Scripts\Spells\MagicBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\MeshContainer.cs" />
      <Compile Include="Assets\Scripts\Spells\DamagingProjectile.cs" />
-     <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\Spells\FireBall.cs" />
-     <Compile Include="Assets\Scripts\Spells\MagicBolt.cs" />
-     <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
+     <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Scripts\HP\Health.cs" />
+     <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\HP\HealthData.cs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_holographic_controller.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\Terrain\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive_pro.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_vive_cosmos_controller.json" />
      <None Include="Assets\StreamingAssets\SteamVR\actions.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_oculus_touch.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive_tracker_camera.json" />
      <None Include="Assets\Terrain\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive_cosmos.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Terrain\Lava\lava.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_holographic_hmd.json" />
      <None Include="Assets\Terrain\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_vive_controller.json" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_knuckles.json" />
      <None Include="Assets\Terrain\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_index_hmd.json" />
      <None Include="Assets\Terrain\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Program Files (x86)\Unity\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

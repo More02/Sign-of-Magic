@@ -6,10 +6,7 @@ namespace Spells
     {    
         protected override void PerformSpellAction()
         {
-            if (_target is not null)
-            {
-                //TODO
-            }
+            //TODO
         }
     }
 }

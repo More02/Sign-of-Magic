@@ -7,7 +7,7 @@ namespace Spells
         [SerializeField] 
         private int _damageValue;
 
-        protected GameObject _target;
+        protected GameObject target;
 
         private void OnCollisionEnter(Collision collision)
         {
