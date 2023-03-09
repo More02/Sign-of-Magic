@@ -37,15 +37,13 @@ namespace HP
 
         private void Death()
         {
-            var healthData = new HealthData(0, 0);
-            onHealthChanged?.Invoke(healthData);
+            onHealthChanged?.Invoke(new HealthData(0, 0));
         }
 
         private void InvokeHealthChanged()
         {
             var currentHealthAsPercange = (float)_currentHealth / _maxHealth;
-            var healthData = new HealthData(currentHealthAsPercange, _currentHealth);
-            onHealthChanged?.Invoke(healthData);
+            onHealthChanged?.Invoke(new HealthData(currentHealthAsPercange, _currentHealth));
         }
     }
 }

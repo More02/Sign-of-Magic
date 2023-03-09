@@ -48,6 +48,10 @@
      <Compile Include="Assets\Scripts\Spells\SpellCreator.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\Scripts\HP\Health.cs" />
+     <Compile Include="Assets\Scripts\HP\HealthData.cs" />
+     <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Lava.cs" />
      <Compile Include="Assets\Scripts\HtcViveInput.cs" />
      <Compile Include="Assets\Scripts\Spells\ProjectileSpell.cs" />
      <Compile Include="Assets\Scripts\Spells\TeleportationBall.cs" />
@@ -59,11 +63,7 @@
      <Compile Include="Assets\Scripts\Spells\DamagingProjectile.cs" />
      <Compile Include="Assets\Scripts\Spells\FireBall.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
-     <Compile Include="Assets\Scripts\HP\Health.cs" />
-     <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
-     <Compile Include="Assets\Scripts\HP\HealthData.cs" />
      <Compile Include="Assets\Scripts\HP\TypeOfElement.cs" />
-     <Compile Include="Assets\Scripts\Lava.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />

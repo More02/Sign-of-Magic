@@ -10,12 +10,13 @@ namespace Spells
 
         private new void Start()
         {
+            base.Start();
             TypeOfElement = TypeOfElement.Fire;
         }
         protected override void PerformSpellAction(Health health)
         {
             if (Target is null) return;
-            if (Target.GetComponent<Health>().TypeOfElement == TypeOfElement)
+            if (health.TypeOfElement == TypeOfElement)
             {
                 health.ChangeHealth(DamageValue);
             }

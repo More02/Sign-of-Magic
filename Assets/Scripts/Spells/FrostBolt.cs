@@ -10,6 +10,7 @@ namespace Spells
 
         private new void Start()
         {
+            base.Start();
             TypeOfElement = TypeOfElement.Ice;
         }
 
@@ -17,7 +18,7 @@ namespace Spells
         {
             if (Target is null) return;
             _speed -= _lostOfValue;
-            if (Target.GetComponent<Health>().TypeOfElement == TypeOfElement)
+            if (health.TypeOfElement == TypeOfElement)
             {
                 health.ChangeHealth(DamageValue + _lostOfValue);
             }
