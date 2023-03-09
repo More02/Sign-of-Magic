@@ -1,4 +1,5 @@
 using System.Collections;
+using HP;
 using UnityEngine;
 
 namespace Spells
@@ -12,7 +13,7 @@ namespace Spells
             set => _character = value;
         }
 
-        protected override void PerformSpellAction()
+         protected void PerformSpellAction()
         {
             if (_character is not null)
             {
@@ -25,6 +26,11 @@ namespace Spells
                 Debug.Log("Null character error");
             }
         }
+         
+         protected override void PerformSpellAction(Health health)
+         {
+             throw new System.NotImplementedException();
+         }
 
         private void OnCollisionEnter(Collision collision)
         {
@@ -34,5 +40,7 @@ namespace Spells
                 Destroy(gameObject);
             }
         }
+
+        
     }
 }

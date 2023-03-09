@@ -7,23 +7,16 @@ namespace HP
     {
         [SerializeField] private int _maxHealth = 100;
         private int _currentHealth;
+        [SerializeField] public TypeOfElement TypeOfElement;
 
-        public event Action<HealthData> HealthChanged;
+        public event Action<HealthData> onHealthChanged;
 
         private void Start()
         {
             _currentHealth = _maxHealth;
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                ChangeHealth(-20);
-            }
-        }
-
-        private void ChangeHealth(int value)
+        public void ChangeHealth(int value)
         {
             _currentHealth += value;
             if (_currentHealth <= 0)
@@ -44,15 +37,15 @@ namespace HP
 
         private void Death()
         {
-            HealthData healthData = new HealthData(0, 0);
-            HealthChanged?.Invoke(healthData);
+            var healthData = new HealthData(0, 0);
+            onHealthChanged?.Invoke(healthData);
         }
 
         private void InvokeHealthChanged()
         {
-            float currentHealthAsPercange = (float)_currentHealth / _maxHealth;
-            HealthData healthData = new HealthData(currentHealthAsPercange, _currentHealth);
-            HealthChanged?.Invoke(healthData);
+            var currentHealthAsPercange = (float)_currentHealth / _maxHealth;
+            var healthData = new HealthData(currentHealthAsPercange, _currentHealth);
+            onHealthChanged?.Invoke(healthData);
         }
     }
 }

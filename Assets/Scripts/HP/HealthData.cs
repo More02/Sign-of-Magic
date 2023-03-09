@@ -7,8 +7,8 @@
 
         public HealthData(float currentHealthAsPercange, float currentHealth)
         {
-            this.CurrentHealthAsPercange = currentHealthAsPercange;
-            this.CurrentHealth = currentHealth;
+            CurrentHealthAsPercange = currentHealthAsPercange;
+            CurrentHealth = currentHealth;
         }
     }
 }

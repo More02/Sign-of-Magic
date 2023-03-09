@@ -1,3 +1,4 @@
+using HP;
 using UnityEngine;
 
 namespace Spells
@@ -5,13 +6,22 @@ namespace Spells
     public class FireBall : DamagingProjectile
     {
         [SerializeField]
-        private int _fireDamage;
-        
-        protected override void PerformSpellAction()
+        private int _fireDamage = -5;
+
+        private new void Start()
         {
-            if (target is not null)
+            TypeOfElement = TypeOfElement.Fire;
+        }
+        protected override void PerformSpellAction(Health health)
+        {
+            if (Target is null) return;
+            if (Target.GetComponent<Health>().TypeOfElement == TypeOfElement)
             {
-                //TODO
+                health.ChangeHealth(DamageValue);
+            }
+            else
+            {
+                health.ChangeHealth(DamageValue + _fireDamage);
             }
         }
     }
