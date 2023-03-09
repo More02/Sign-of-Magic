@@ -9647,6 +9647,7 @@ GameObject:
   - component: {fileID: 1125991447357821742}
   - component: {fileID: 7024542418862039389}
   - component: {fileID: 34336696952611064}
+  - component: {fileID: 4658822235275834777}
   m_Layer: 0
   m_Name: FrostBolt
   m_TagString: Untagged
@@ -14480,6 +14481,22 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &4658822235275834777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6700859090635554448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92252efb3643f2849962b4d3a892b860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifeTime: 10
+  _speed: 50
+  _damageValue: 0
+  _frostDamage: 0
 --- !u!1 &7068539053006159884
 GameObject:
   m_ObjectHideFlags: 0

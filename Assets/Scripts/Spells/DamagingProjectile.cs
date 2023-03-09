@@ -7,15 +7,7 @@ namespace Spells
         [SerializeField] 
         private int _damageValue;
 
-        private GameObject _target;
-
-        protected override void PerformSpellAction()
-        {
-            if (_target is not null)
-            {
-                //TODO
-            }
-        }
+        protected GameObject _target;
 
         private void OnCollisionEnter(Collision collision)
         {

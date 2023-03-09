@@ -14,8 +14,8 @@ namespace Spells
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                var spell = Instantiate(_spellPrefab, _castPoint.transform.position, Quaternion.identity);
-                if (spell.TryGetComponent<TeleportationSpell>(out var spellScript))
+                var spell = Instantiate(_spellPrefab, _castPoint.transform);
+                if (spell.TryGetComponent<TeleportationBall>(out var spellScript))
                 {
                     spellScript.Character = transform;
                 }

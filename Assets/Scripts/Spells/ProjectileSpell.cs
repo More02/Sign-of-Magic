@@ -9,14 +9,14 @@ namespace Spells
         [SerializeField]
         private float _lifeTime = 10f;
         [SerializeField]
-        private float _speed = 15f;
+        protected float _speed = 15f;
 
         protected abstract void PerformSpellAction();
 
         protected void Start()
         {
             StartCoroutine(LifeCoroutine(_lifeTime));
-            GetComponent<Rigidbody>().AddForce(transform.right * _speed, ForceMode.VelocityChange);
+            GetComponent<Rigidbody>().AddForce(transform.right.normalized * _speed, ForceMode.VelocityChange);
         }
         
         private IEnumerator LifeCoroutine(float sec)

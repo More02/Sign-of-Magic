@@ -19288,6 +19288,7 @@ GameObject:
   - component: {fileID: -6838157958444923297}
   - component: {fileID: 6097730986717892634}
   - component: {fileID: 6097730986717892635}
+  - component: {fileID: 6720642201401676367}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: Untagged
@@ -24131,3 +24132,19 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &6720642201401676367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097730986717892632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cda24b30e22cad4f9baf56a8eb08938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifeTime: 10
+  _speed: 50
+  _damageValue: 0
+  _fireDamage: 0

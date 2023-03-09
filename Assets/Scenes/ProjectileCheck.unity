@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b07dd729f2f2b147910a6d665118fe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spellPrefab: {fileID: 3809574251162723174, guid: b1f5e6982010e2945ae5388bd80b1b24,
+  _spellPrefab: {fileID: 6700859090635554448, guid: cd511853e96e3c14c8fa18d3e87b4dc2,
     type: 3}
   _castPoint: {fileID: 1384623921}
 --- !u!1 &1359611386
@@ -652,14 +652,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384623920}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.77272725, y: 0, z: 0}
   m_LocalScale: {x: 0.1818182, y: 0.18181817, z: 0.1818182}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1223637783}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1512110916
 GameObject:
   m_ObjectHideFlags: 0

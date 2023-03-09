@@ -4834,6 +4834,7 @@ GameObject:
   - component: {fileID: 4282110587090427582}
   - component: {fileID: 6524725095400337906}
   - component: {fileID: 6524725095400337907}
+  - component: {fileID: -7539272934433023637}
   m_Layer: 0
   m_Name: MagicBolt
   m_TagString: Untagged
@@ -9668,6 +9669,21 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-7539272934433023637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6524725095400337676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6c2d475cfb7fd4cb46fa10d2bfc394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lifeTime: 10
+  _speed: 50
+  _damageValue: 0
 --- !u!1 &6524725096113868524
 GameObject:
   m_ObjectHideFlags: 0

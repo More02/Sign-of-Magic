@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Spells
 {
-    public class TeleportationSpell : ProjectileSpell
+    public class TeleportationBall : ProjectileSpell
     {
         private Transform _character;
         
@@ -12,11 +12,6 @@ namespace Spells
             set => _character = value;
         }
 
-        protected new void Start()
-        {
-            base.Start();
-        }
-        
         protected override void PerformSpellAction()
         {
             if (_character is not null)
