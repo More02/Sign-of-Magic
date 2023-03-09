@@ -1,14 +1,15 @@
+using HP;
 using UnityEngine;
 
 namespace Spells
 {
     public class MagicBolt : DamagingProjectile
     {    
-        protected override void PerformSpellAction()
+        protected override void PerformSpellAction(Health health)
         {
-            if (_target is not null)
+            if (Target is not null)
             {
-                //TODO
+                health.ChangeHealth(DamageValue);
             }
         }
     }

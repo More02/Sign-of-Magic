@@ -1,3 +1,4 @@
+using HP;
 using UnityEngine;
 
 namespace Spells
@@ -5,13 +6,19 @@ namespace Spells
     public abstract class DamagingProjectile : ProjectileSpell
     {
         [SerializeField] 
-        private int _damageValue;
+        protected int DamageValue = -15;
+        protected TypeOfElement TypeOfElement;
 
-        protected GameObject _target;
+        protected GameObject Target;
 
-        private void OnCollisionEnter(Collision collision)
+        protected void OnCollisionEnter(Collision collision)
         {
-            //TODO
+            if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
+            Target = collision.gameObject;
+            PerformSpellAction(health);
         }
+        
+        
+        
     }
 }
