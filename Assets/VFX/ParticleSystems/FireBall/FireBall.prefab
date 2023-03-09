@@ -24144,7 +24144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cda24b30e22cad4f9baf56a8eb08938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeToCast: 1
   _lifeTime: 10
-  _speed: 50
+  _speed: 15
   _damageValue: 0
   _fireDamage: 0
