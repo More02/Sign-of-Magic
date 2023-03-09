@@ -28,9 +28,9 @@ namespace Spells
         }
          
          protected override void PerformSpellAction(Health health)
-         {
-             throw new System.NotImplementedException();
-         }
+        {
+            throw new System.NotImplementedException();
+        }
 
         private void OnCollisionEnter(Collision collision)
         {

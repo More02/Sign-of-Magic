@@ -2,7 +2,7 @@
 {
     public enum TypeOfElement
     {
-        Green,
+        None,
         Ice,
         Fire  
     }

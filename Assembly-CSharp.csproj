@@ -45,7 +45,6 @@
      <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
      <Compile Include="Assets\Terrain\Water (Basic)\Scripts\WaterBasic.cs" />
-     <Compile Include="Assets\Scripts\Spells\SpellCreator.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Scripts\HP\Health.cs" />
