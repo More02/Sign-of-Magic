@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,7 +10,8 @@ Material:
   m_Name: Snow
   m_Shader: {fileID: -6465566751694194690, guid: 78e70bd5bdb47864cb9357476178eab1,
     type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -40,11 +41,28 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_245b712d7a1f4d218ee43d78db3a8f42: 60
     - Vector1_3d6713de7a1549508fc51acb8d960421: 0.95
     - Vector1_4cfb95aea5fb45269ace5ee08db7d08a: 5
     - Vector1_95c002ff9da14cc29bb396666de290de: 9
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
-    - Color_6a7529fa393d464b8df4f728495708ec: {r: 1, g: 1, b: 1, a: 0.39215687}
+    - Color_6a7529fa393d464b8df4f728495708ec: {r: 0.5566038, g: 0.5566038, b: 0.5566038,
+        a: 0.39215687}
   m_BuildTextureStacks: []
+--- !u!114 &3535376739316164111
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
