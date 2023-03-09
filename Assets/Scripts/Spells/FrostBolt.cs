@@ -26,5 +26,12 @@ namespace Spells
                 health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
             }
         }
+
+        private new void OnCollisionEnter(Collision collision)
+        {
+            base.OnCollisionEnter(collision);
+            if (!collision.gameObject.TryGetComponent<Lava>(out var lava)) return;
+            Instantiate(lava.Stone, collision.contacts[0].point, Quaternion.identity);s
+        }
     }
 }

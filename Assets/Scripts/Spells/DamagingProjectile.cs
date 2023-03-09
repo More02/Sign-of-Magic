@@ -11,7 +11,7 @@ namespace Spells
 
         protected GameObject Target;
 
-        private void OnCollisionEnter(Collision collision)
+        protected void OnCollisionEnter(Collision collision)
         {
             if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
             Target = collision.gameObject;
