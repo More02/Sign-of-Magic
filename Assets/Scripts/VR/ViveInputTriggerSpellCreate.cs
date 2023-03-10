@@ -18,8 +18,8 @@ namespace VR
         private GameObject _leftSpell;
         private GameObject _rightSpell;
     
-        private SteamVR_Input_Sources _leftHand = SteamVR_Input_Sources.LeftHand;
-        private SteamVR_Input_Sources _rightHand = SteamVR_Input_Sources.RightHand;
+        private readonly SteamVR_Input_Sources _leftHand = SteamVR_Input_Sources.LeftHand;
+        private readonly SteamVR_Input_Sources _rightHand = SteamVR_Input_Sources.RightHand;
 
         private float _leftTimer;
         private float _rightTimer;
@@ -75,10 +75,9 @@ namespace VR
             if (Time.time < _rightTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
         }
     
-        private GameObject CastSpell(GameObject spellCast, Transform castTransform)
+        private static GameObject CastSpell(GameObject spellCast, Transform castTransform)
         {
             var castSpell = Instantiate(spellCast, castTransform);
-            //castSpell.transform.localScale = Vector3.one;
             return castSpell;
         }
     }
