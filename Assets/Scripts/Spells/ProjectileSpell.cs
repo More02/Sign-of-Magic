@@ -14,6 +14,8 @@ namespace Spells
         [SerializeField]
         protected float _speed = 50f;
 
+        public float TimeToCast => _timeToCast;
+
         protected abstract void PerformSpellAction(Health health);
 
         protected void Start()

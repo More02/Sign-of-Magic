@@ -13,7 +13,7 @@ namespace Spells
             set => _character = value;
         }
 
-         protected void PerformSpellAction()
+        protected override void PerformSpellAction(Health health)
         {
             if (_character is not null)
             {
@@ -26,17 +26,12 @@ namespace Spells
                 Debug.Log("Null character error");
             }
         }
-         
-         protected override void PerformSpellAction(Health health)
-        {
-            throw new System.NotImplementedException();
-        }
 
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.CompareTag("Terrain"))
             {
-                PerformSpellAction();
+                PerformSpellAction(_character.GetComponent<Health>());
                 Destroy(gameObject);
             }
         }

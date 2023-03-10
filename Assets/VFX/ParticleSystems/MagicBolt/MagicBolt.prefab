@@ -9684,7 +9684,7 @@ MonoBehaviour:
   _timeToCast: 1
   _lifeTime: 10
   _speed: 35
-  _damageValue: 0
+  DamageValue: -15
 --- !u!1 &6524725096113868524
 GameObject:
   m_ObjectHideFlags: 0

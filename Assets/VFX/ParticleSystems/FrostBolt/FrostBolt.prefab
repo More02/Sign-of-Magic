@@ -14495,9 +14495,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToCast: 1
   _lifeTime: 10
-  _speed: 50
-  _damageValue: 0
-  _frostDamage: 0
+  _speed: 45
+  DamageValue: -15
+  _frostDamage: -4
+  _lostOfValue: 2
 --- !u!1 &7068539053006159884
 GameObject:
   m_ObjectHideFlags: 0

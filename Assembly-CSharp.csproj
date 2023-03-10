@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
@@ -45,15 +45,13 @@
      <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
      <Compile Include="Assets\Terrain\Water (Basic)\Scripts\WaterBasic.cs" />
-     <Compile Include="Assets\Scripts\Spells\SpellCreator.cs" />
      <Compile Include="Assets\Scripts\VR\Movement.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\GerstnerDisplace.cs" />
-     <Compile Include="Assets\Scripts\VR\ViveInputTouchpad.cs" />
      <Compile Include="Assets\Scripts\HP\Health.cs" />
      <Compile Include="Assets\Scripts\HP\HealthData.cs" />
      <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Lava.cs" />
-     <Compile Include="Assets\Scripts\HtcViveInput.cs" />
+     <Compile Include="Assets\Scripts\VR\ViveInputTouchpad.cs" />
      <Compile Include="Assets\Scripts\Spells\ProjectileSpell.cs" />
      <Compile Include="Assets\Scripts\Spells\TeleportationBall.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterTile.cs" />

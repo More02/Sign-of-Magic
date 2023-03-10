@@ -2239,6 +2239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1397780466808792812}
   - component: {fileID: 3993014195025826189}
+  - component: {fileID: 3465818239599548203}
   m_Layer: 0
   m_Name: Demon
   m_TagString: Untagged
@@ -2285,6 +2286,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   TypeOfElement: 2
+--- !u!65 &3465818239599548203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397780466808792810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.2, z: 1.12}
+  m_Center: {x: 0, y: 1, z: 0.1}
 --- !u!1 &1397780466873120083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,6 +3921,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1397780466808792812}
     m_Modifications:
+    - target: {fileID: 1993032023743678148, guid: f0ae0160035569a40805ba0610ca4bdd,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1993032023743678150, guid: f0ae0160035569a40805ba0610ca4bdd,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3965,7 +3984,7 @@ PrefabInstance:
     - target: {fileID: 1993032023743678150, guid: f0ae0160035569a40805ba0610ca4bdd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.244
       objectReference: {fileID: 0}
     - target: {fileID: 1993032023743678150, guid: f0ae0160035569a40805ba0610ca4bdd,
         type: 3}
@@ -3995,7 +4014,7 @@ PrefabInstance:
     - target: {fileID: 1993032023743678150, guid: f0ae0160035569a40805ba0610ca4bdd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.082
+      value: 2.155
       objectReference: {fileID: 0}
     - target: {fileID: 1993032023743678150, guid: f0ae0160035569a40805ba0610ca4bdd,
         type: 3}
