@@ -26,8 +26,9 @@ namespace Spells
             }
             else
             {
-                health.ChangeHealth(DamageValue + _fireDamage);
+                health.ChangeHealth(DamageValue);
                 await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, base.Color));
+                health.ChangeHealth(_fireDamage);
                 await healthBar.CreateDamageText(new DamageData(_fireDamage, collisionPoint, Color));
             }
         }

@@ -29,8 +29,9 @@ namespace Spells
             }
             else
             {
-                health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
+                health.ChangeHealth(DamageValue + _lostOfValue);
                 await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, base.Color));
+                health.ChangeHealth( _frostDamage);
                 await healthBar.CreateDamageText(new DamageData(_frostDamage, collisionPoint, Color));
             }
         }
