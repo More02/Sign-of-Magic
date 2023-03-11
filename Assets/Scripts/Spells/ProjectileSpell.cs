@@ -1,3 +1,4 @@
+using System.Collections;
 using HP;
 using UnityEngine;
 
@@ -16,8 +17,15 @@ namespace Spells
 
         protected void Start()
         {
-            StartCoroutine(ILifeCoroutine.LifeCoroutine(_lifeTime, gameObject));
+            StartCoroutine(LifeCoroutine(_lifeTime));
             GetComponent<Rigidbody>().AddForce(transform.right.normalized * _speed, ForceMode.VelocityChange);
+        }
+
+        private IEnumerator LifeCoroutine(float sec)
+        {
+            yield return new WaitForSeconds(sec);
+
+           Destroy(gameObject);
         }
     }
 }

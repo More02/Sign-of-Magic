@@ -10,13 +10,12 @@ namespace Spells
         protected TypeOfElement TypeOfElement;
         protected Color Color = Color.clear;
 
-        protected GameObject Target;
+        protected Collision Target;
 
         protected void OnCollisionEnter(Collision collision)
         {
             if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
-            Target = collision.gameObject;
-            Debug.Log(Target.name);
+            Target = collision;
             PerformSpellAction(health);
         }
     }

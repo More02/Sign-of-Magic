@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Globalization;
+using System.Threading.Tasks;
 using Spells;
 using TMPro;
 using UnityEngine;
@@ -40,14 +42,13 @@ namespace HP
             _healthCountText.text = healthData.CurrentHealth.ToString(CultureInfo.InvariantCulture);
         }
 
-        public void CreateDamageText(DamageData damageData)
+        public async Task CreateDamageText(DamageData damageData)
         {
-            Debug.Log("Into CreateDamageText");
-            var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target.transform);
+            var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target.contacts[0].point, Quaternion.identity);
             var damageText = damageTextObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>();
-            Debug.Log("Into GetChild" + damageText.name);
             damageText.text = damageData.BaseDamage.ToString(CultureInfo.InvariantCulture);
             damageText.color = damageData.Color;
+            await Task.Delay(100);
         }
         
     }

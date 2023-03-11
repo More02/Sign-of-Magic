@@ -15,20 +15,20 @@ namespace Spells
             Color = new Color(0.32f, 0.85f, 1f);
         }
 
-        protected override void PerformSpellAction(Health health)
+        protected override async void PerformSpellAction(Health health)
         {
             if (Target is null) return;
             _speed -= _lostOfValue;
-            var healthBar = Target.GetComponent<HealthBar>();
+            var healthBar = Target.gameObject.GetComponent<HealthBar>();
             if (health.TypeOfElement == TypeOfElement)
             {
-                healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
                 health.ChangeHealth(DamageValue + _lostOfValue);
             }
             else
             {
-                healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
-                healthBar.CreateDamageText(new DamageData(_frostDamage, Target, Color));
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
+                await healthBar.CreateDamageText(new DamageData(_frostDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
             }
         }
