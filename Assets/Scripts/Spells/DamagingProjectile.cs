@@ -6,8 +6,7 @@ namespace Spells
 {
     public abstract class DamagingProjectile : ProjectileSpell
     {
-        [SerializeField] 
-        protected int DamageValue = -15;
+        [SerializeField] protected int DamageValue = -15;
         protected TypeOfElement TypeOfElement;
         protected Color Color = Color.clear;
 

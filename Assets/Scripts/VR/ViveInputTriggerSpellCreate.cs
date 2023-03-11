@@ -6,8 +6,7 @@ namespace VR
 {
     public class ViveInputTriggerSpellCreate : MonoBehaviour
     {
-        [SerializeField] 
-        private SteamVR_Action_Boolean _grabPinch;
+        [SerializeField] private SteamVR_Action_Boolean _grabPinch;
 
         [SerializeField] private GameObject _leftProjectile;
         [SerializeField] private GameObject _leftCast;
@@ -24,6 +23,24 @@ namespace VR
         private float _leftTimer;
         private float _rightTimer;
 
+        public GameObject LeftProjectile
+        {
+            set => _leftProjectile = value;
+        }
+        public GameObject LeftCast
+        {
+            set => _leftCast = value;
+        }
+        public GameObject RightProjectile
+        {
+            set => _rightProjectile = value;
+        }
+        public GameObject RightCast
+        {
+            set => _rightCast = value;
+        }
+        
+        
         private Transform _leftSpellTransform;
         private Transform _rightSpellTransform;
     

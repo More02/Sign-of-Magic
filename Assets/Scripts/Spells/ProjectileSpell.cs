@@ -7,12 +7,9 @@ namespace Spells
     [RequireComponent(typeof(Rigidbody))]
     public abstract class ProjectileSpell : MonoBehaviour
     {
-        [SerializeField]
-        private float _timeToCast = 1f;
-        [SerializeField]
-        private float _lifeTime = 10f;
-        [SerializeField]
-        protected float _speed = 50f;
+        [SerializeField] private float _timeToCast = 1f;
+        [SerializeField] private float _lifeTime = 10f;
+        [SerializeField] protected float _speed = 50f;
 
         public float TimeToCast => _timeToCast;
 

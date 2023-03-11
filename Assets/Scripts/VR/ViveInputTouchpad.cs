@@ -7,17 +7,13 @@ namespace VR
     public class ViveInputTouchpad : MonoBehaviour
     {
         private SteamVR_Input_Sources _hand;
-        [SerializeField] 
-        private SteamVR_Action_Vector2 _touchPos;
-        [SerializeField] 
-        private SteamVR_Action_Boolean _touchPad;
-        [SerializeField] 
-        private Transform _cameraTransform;
+        [SerializeField] private SteamVR_Action_Vector2 _touchPos;
+        [SerializeField] private SteamVR_Action_Boolean _touchPad;
+        [SerializeField] private Transform _cameraTransform;
 
         private Vector2 _vectorFromHand = new Vector2(0, 0);
         private CharacterController _characterController;
-        [SerializeField] 
-        private float _speed = 12f;
+        [SerializeField] private float _speed = 12f;
 
         private bool _isClicked;
 

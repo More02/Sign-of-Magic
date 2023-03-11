@@ -5,8 +5,7 @@ namespace Spells
 {
     public class FireBall : DamagingProjectile
     {
-        [SerializeField]
-        private int _fireDamage = -5;
+        [SerializeField] private int _fireDamage = -5;
 
         private new void Start()
         {
