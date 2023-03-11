@@ -14,7 +14,6 @@ namespace HP
         {
             await MoveUp();
             Destroy(gameObject);
-            //StartCoroutine(LifeCoroutine(_lifeTime));
         }
         
         private async Task MoveUp()
@@ -26,13 +25,6 @@ namespace HP
                 nowTime += Time.deltaTime;
                 await Task.Yield();
             }
-        }
-
-        private IEnumerator LifeCoroutine(float sec)
-        {
-            yield return new WaitForSeconds(sec);
-
-            Destroy(gameObject);
         }
     }
 }

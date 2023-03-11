@@ -8,7 +8,7 @@ namespace Spells
     {
         [SerializeField] protected int DamageValue = -15;
         protected TypeOfElement TypeOfElement;
-        protected Color Color = Color.clear;
+        protected Color Color = new Color(0.82f, 0.09f, 1f);
 
         protected Collision Target;
 

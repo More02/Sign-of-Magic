@@ -7,6 +7,7 @@ namespace Spells
     {
         [SerializeField] private int _frostDamage = -4;
         [SerializeField] private int _lostOfValue = 2;
+        protected new Color Color;
 
         private new void Start()
         {
@@ -19,17 +20,18 @@ namespace Spells
         {
             if (Target is null) return;
             _speed -= _lostOfValue;
+            var collisionPoint = Target.contacts[0].point;
             var healthBar = Target.gameObject.GetComponent<HealthBar>();
             if (health.TypeOfElement == TypeOfElement)
             {
-                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
                 health.ChangeHealth(DamageValue + _lostOfValue);
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, base.Color));
             }
             else
             {
-                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
-                await healthBar.CreateDamageText(new DamageData(_frostDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(_frostDamage, collisionPoint, Color));
             }
         }
 

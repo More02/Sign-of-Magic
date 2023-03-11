@@ -6,6 +6,7 @@ namespace Spells
     public class FireBall : DamagingProjectile
     {
         [SerializeField] private int _fireDamage = -5;
+        protected new Color Color;
 
         private new void Start()
         {
@@ -17,18 +18,18 @@ namespace Spells
         {
             if (Target is null) return;
             if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;
+            var collisionPoint = Target.contacts[0].point;
             if (health.TypeOfElement == TypeOfElement)
             {
-                await healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
                 health.ChangeHealth(DamageValue);
+                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, base.Color));
             }
             else
             {
-                await healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
-                await healthBar.CreateDamageText(new DamageData(_fireDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _fireDamage);
+                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(_fireDamage, collisionPoint, Color));
             }
-
         }
     }
 }

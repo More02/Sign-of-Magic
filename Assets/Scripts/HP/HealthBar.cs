@@ -16,8 +16,10 @@ namespace HP
         [SerializeField] private GameObject _damageTextPrefab;
 
         [SerializeField] private Gradient _gradient;
+        private bool _isLastHit = false;
 
         private Health _health;
+        private HealthData _healthData;
         private DamagingProjectile _damagingProjectile;
 
         private void Awake()
@@ -35,6 +37,7 @@ namespace HP
 
         private void OnHealthChanged(HealthData healthData)
         {
+            _healthData = healthData;
             _healthBarFilling.fillAmount = healthData.CurrentHealthAsPercange;
             _healthBarFilling.color = _gradient.Evaluate(healthData.CurrentHealthAsPercange);
 
@@ -44,12 +47,18 @@ namespace HP
 
         public async Task CreateDamageText(DamageData damageData)
         {
-            var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target.contacts[0].point, Quaternion.identity);
+            if (_isLastHit) return;
+            if ((_healthData.CurrentHealth <= 0))
+            {
+                _isLastHit = true;
+            }
+            var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target,
+                Quaternion.identity);
+            damageTextObject.transform.SetParent(transform);
             var damageText = damageTextObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>();
             damageText.text = damageData.BaseDamage.ToString(CultureInfo.InvariantCulture);
             damageText.color = damageData.Color;
-            await Task.Delay(100);
+            await Task.Delay(150);
         }
-        
     }
 }
