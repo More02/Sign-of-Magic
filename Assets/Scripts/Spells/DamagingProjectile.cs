@@ -1,3 +1,4 @@
+using System;
 using HP;
 using UnityEngine;
 
@@ -8,8 +9,10 @@ namespace Spells
         [SerializeField] 
         protected int DamageValue = -15;
         protected TypeOfElement TypeOfElement;
+        protected Color Color = Color.clear;
 
         protected GameObject Target;
+        public event Action<DamageData> onSendDamage;
 
         protected void OnCollisionEnter(Collision collision)
         {
@@ -17,8 +20,5 @@ namespace Spells
             Target = collision.gameObject;
             PerformSpellAction(health);
         }
-        
-        
-        
     }
 }

@@ -9,6 +9,7 @@ namespace Spells
         {
             if (Target is not null)
             {
+                onSendDamage?.Invoke(new DamageData(DamageValue, 0, Target, TypeOfElement, Color));
                 health.ChangeHealth(DamageValue);
             }
         }

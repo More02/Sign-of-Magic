@@ -12,6 +12,7 @@ namespace Spells
         {
             base.Start();
             TypeOfElement = TypeOfElement.Ice;
+            Color = new Color(0.32f, 0.85f, 1f);
         }
 
         protected override void PerformSpellAction(Health health)
@@ -20,10 +21,12 @@ namespace Spells
             _speed -= _lostOfValue;
             if (health.TypeOfElement == TypeOfElement)
             {
+                onSendDamage?.Invoke(new DamageData(DamageValue+ _lostOfValue, 0, Target, TypeOfElement, Color));
                 health.ChangeHealth(DamageValue + _lostOfValue);
             }
             else
             {
+                onSendDamage?.Invoke(new DamageData(DamageValue+ _lostOfValue, _frostDamage, Target, TypeOfElement, Color));
                 health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
             }
         }

@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\VR\SpellTransformPutter.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\HP\TypeOfElement.cs" />
+     <Compile Include="Assets\Scripts\HP\DamageData.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
