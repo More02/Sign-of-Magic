@@ -16,6 +16,7 @@ namespace Spells
         {
             if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
             Target = collision.gameObject;
+            Debug.Log(Target.name);
             PerformSpellAction(health);
         }
     }

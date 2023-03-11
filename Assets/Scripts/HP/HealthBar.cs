@@ -42,8 +42,10 @@ namespace HP
 
         public void CreateDamageText(DamageData damageData)
         {
+            Debug.Log("Into CreateDamageText");
             var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target.transform);
             var damageText = damageTextObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>();
+            Debug.Log("Into GetChild" + damageText.name);
             damageText.text = damageData.BaseDamage.ToString(CultureInfo.InvariantCulture);
             damageText.color = damageData.Color;
         }

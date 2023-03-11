@@ -15,8 +15,11 @@ namespace Spells
         }
         protected override void PerformSpellAction(Health health)
         {
+            Debug.Log("in PerformSpellAction");
             if (Target is null) return;
-            var healthBar = Target.GetComponent<HealthBar>();
+            Debug.Log(Target.name);
+            if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;
+            Debug.Log(healthBar.name);
             if (health.TypeOfElement == TypeOfElement)
             {
                 healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
@@ -28,6 +31,7 @@ namespace Spells
                 healthBar.CreateDamageText(new DamageData(_fireDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _fireDamage);
             }
+
         }
     }
 }

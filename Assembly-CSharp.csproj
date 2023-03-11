@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\HP\DamageNumber.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
@@ -69,7 +70,6 @@
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\HP\TypeOfElement.cs" />
      <Compile Include="Assets\Scripts\ILifeCoroutine.cs" />
-     <Compile Include="Assets\Scripts\HP\DamageNumber.cs" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />
