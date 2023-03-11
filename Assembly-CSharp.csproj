@@ -62,10 +62,11 @@
      <Compile Include="Assets\Scripts\Spells\DamagingProjectile.cs" />
      <Compile Include="Assets\Scripts\Spells\FireBall.cs" />
      <Compile Include="Assets\Scripts\VR\ViveInputTriggerSpellCreate.cs" />
-     <Compile Include="Assets\Scripts\VR\SpellTransformPutter.cs" />
+     <Compile Include="Assets\Scripts\VR\SpellTransformAndUIPutter.cs" />
+     <Compile Include="Assets\Scripts\UI\SkillButton.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\HP\TypeOfElement.cs" />
-     <Compile Include="Assets\Scripts\UI\SkillButton.cs" />
+     <Compile Include="Assets\Scripts\VR\ViveInputGrabShowUI.cs" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />

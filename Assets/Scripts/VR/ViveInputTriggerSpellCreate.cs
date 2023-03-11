@@ -6,8 +6,7 @@ namespace VR
 {
     public class ViveInputTriggerSpellCreate : MonoBehaviour
     {
-        [SerializeField] 
-        private SteamVR_Action_Boolean _grabPinch;
+        [SerializeField] private SteamVR_Action_Boolean _grabPinch;
 
         [SerializeField] private GameObject _leftProjectile;
         [SerializeField] private GameObject _leftCast;
