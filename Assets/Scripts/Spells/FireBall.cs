@@ -16,14 +16,16 @@ namespace Spells
         protected override void PerformSpellAction(Health health)
         {
             if (Target is null) return;
+            var healthBar = Target.GetComponent<HealthBar>();
             if (health.TypeOfElement == TypeOfElement)
             {
-                onSendDamage?.Invoke(new DamageData(DamageValue, 0, Target, TypeOfElement, Color));
+                healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
                 health.ChangeHealth(DamageValue);
             }
             else
             {
-                onSendDamage?.Invoke(new DamageData(DamageValue, _fireDamage, Target, TypeOfElement, Color));
+                healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
+                healthBar.CreateDamageText(new DamageData(_fireDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _fireDamage);
             }
         }

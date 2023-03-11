@@ -19,14 +19,16 @@ namespace Spells
         {
             if (Target is null) return;
             _speed -= _lostOfValue;
+            var healthBar = Target.GetComponent<HealthBar>();
             if (health.TypeOfElement == TypeOfElement)
             {
-                onSendDamage?.Invoke(new DamageData(DamageValue+ _lostOfValue, 0, Target, TypeOfElement, Color));
+                healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
                 health.ChangeHealth(DamageValue + _lostOfValue);
             }
             else
             {
-                onSendDamage?.Invoke(new DamageData(DamageValue+ _lostOfValue, _frostDamage, Target, TypeOfElement, Color));
+                healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, Target, Color.white));
+                healthBar.CreateDamageText(new DamageData(_frostDamage, Target, Color));
                 health.ChangeHealth(DamageValue + _lostOfValue + _frostDamage);
             }
         }

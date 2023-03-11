@@ -11,7 +11,6 @@ namespace Spells
         protected Color Color = Color.clear;
 
         protected GameObject Target;
-        public event Action<DamageData> onSendDamage;
 
         protected void OnCollisionEnter(Collision collision)
         {

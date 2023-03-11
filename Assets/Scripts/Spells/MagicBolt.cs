@@ -7,11 +7,10 @@ namespace Spells
     {    
         protected override void PerformSpellAction(Health health)
         {
-            if (Target is not null)
-            {
-                onSendDamage?.Invoke(new DamageData(DamageValue, 0, Target, TypeOfElement, Color));
-                health.ChangeHealth(DamageValue);
-            }
+            if (Target is null) return;
+            var healthBar = Target.GetComponent<HealthBar>();
+            healthBar.CreateDamageText(new DamageData(DamageValue, Target, Color.white));
+            health.ChangeHealth(DamageValue);
         }
     }
 }

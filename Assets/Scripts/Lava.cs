@@ -8,7 +8,7 @@ public class Lava : MonoBehaviour
     [SerializeField] private int _lavaDamage = -5;
     private TypeOfElement _typeOfElement;
     private float _lastTick;
-    private float _tickTime = 1f;
+    private readonly float _tickTime = 1f;
 
     private new void Start()
     {
