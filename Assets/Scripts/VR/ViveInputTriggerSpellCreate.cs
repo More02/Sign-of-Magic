@@ -24,6 +24,24 @@ namespace VR
         private float _leftTimer;
         private float _rightTimer;
 
+        public GameObject LeftProjectile
+        {
+            set => _leftProjectile = value;
+        }
+        public GameObject LeftCast
+        {
+            set => _leftCast = value;
+        }
+        public GameObject RightProjectile
+        {
+            set => _rightProjectile = value;
+        }
+        public GameObject RightCast
+        {
+            set => _rightCast = value;
+        }
+        
+        
         private Transform _leftSpellTransform;
         private Transform _rightSpellTransform;
     
