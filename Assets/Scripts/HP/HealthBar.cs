@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Globalization;
 using System.Threading.Tasks;
@@ -16,23 +17,29 @@ namespace HP
         [SerializeField] private GameObject _damageTextPrefab;
 
         [SerializeField] private Gradient _gradient;
+        
         private bool _isLastHit = false;
 
         private Health _health;
+        private CameraPositionTracker _cameraPositionTracker;
         private HealthData _healthData;
         private DamagingProjectile _damagingProjectile;
 
         private void Awake()
         {
-            _health = transform.parent.parent.GetComponent<Health>();
+            var parent = transform.parent.parent;
+            _health = parent.GetComponent<Health>();
             _health.onHealthChanged += OnHealthChanged;
             _healthBarFilling.color = _gradient.Evaluate(1);
             _healthCountText.color = _gradient.Evaluate(1);
+            _cameraPositionTracker = parent.GetComponent<CameraPositionTracker>();
+            _cameraPositionTracker.onOnCameraPositionChanged += OnRotateUI;
         }
-
+        
         private void OnDestroy()
         {
             _health.onHealthChanged -= OnHealthChanged;
+            _cameraPositionTracker.onOnCameraPositionChanged -= OnRotateUI;
         }
 
         private void OnHealthChanged(HealthData healthData)
@@ -59,6 +66,12 @@ namespace HP
             damageText.text = damageData.BaseDamage.ToString(CultureInfo.InvariantCulture);
             damageText.color = damageData.Color;
             await Task.Delay(150);
+        }
+
+        private void OnRotateUI(Vector3 newUIPosition)
+        {
+            transform.LookAt(new Vector3(transform.position.x, newUIPosition.y, newUIPosition.z));
+            transform.Rotate(0, 180, 0);
         }
     }
 }

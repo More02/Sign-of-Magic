@@ -6,13 +6,12 @@ namespace Spells
     public class FireBall : DamagingProjectile
     {
         [SerializeField] private int _fireDamage = -5;
-        protected new Color Color;
+        private readonly Color _spellColor = new Color(1f, 0.61f, 0.11f);
 
         private new void Start()
         {
             base.Start();
             TypeOfElement = TypeOfElement.Fire;
-            Color = new Color(1f, 0.61f, 0.11f);
         }
         protected override async void PerformSpellAction(Health health)
         {
@@ -22,14 +21,14 @@ namespace Spells
             if (health.TypeOfElement == TypeOfElement)
             {
                 health.ChangeHealth(DamageValue);
-                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, Color));
             }
             else
             {
                 health.ChangeHealth(DamageValue);
-                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(DamageValue, collisionPoint, Color));
                 health.ChangeHealth(_fireDamage);
-                await healthBar.CreateDamageText(new DamageData(_fireDamage, collisionPoint, Color));
+                await healthBar.CreateDamageText(new DamageData(_fireDamage, collisionPoint, _spellColor));
             }
         }
     }

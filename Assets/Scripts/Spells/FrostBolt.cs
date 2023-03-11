@@ -7,13 +7,12 @@ namespace Spells
     {
         [SerializeField] private int _frostDamage = -4;
         [SerializeField] private int _lostOfValue = 2;
-        protected new Color Color;
+        private readonly Color _spellColor = new Color(0.32f, 0.85f, 1f);
 
         private new void Start()
         {
             base.Start();
             TypeOfElement = TypeOfElement.Ice;
-            Color = new Color(0.32f, 0.85f, 1f);
         }
 
         protected override async void PerformSpellAction(Health health)
@@ -25,14 +24,14 @@ namespace Spells
             if (health.TypeOfElement == TypeOfElement)
             {
                 health.ChangeHealth(DamageValue + _lostOfValue);
-                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, Color));
             }
             else
             {
                 health.ChangeHealth(DamageValue + _lostOfValue);
-                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, base.Color));
+                await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, Color));
                 health.ChangeHealth( _frostDamage);
-                await healthBar.CreateDamageText(new DamageData(_frostDamage, collisionPoint, Color));
+                await healthBar.CreateDamageText(new DamageData(_frostDamage, collisionPoint, _spellColor));
             }
         }
 
