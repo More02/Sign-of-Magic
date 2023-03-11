@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Globalization;
 using System.Threading.Tasks;
 using Spells;
@@ -17,13 +15,14 @@ namespace HP
         [SerializeField] private GameObject _damageTextPrefab;
 
         [SerializeField] private Gradient _gradient;
-        
+
         private bool _isLastHit = false;
 
         private Health _health;
         private CameraPositionTracker _cameraPositionTracker;
         private HealthData _healthData;
         private DamagingProjectile _damagingProjectile;
+        private Vector3 _vectorToUIRotate;
 
         private void Awake()
         {
@@ -35,7 +34,7 @@ namespace HP
             _cameraPositionTracker = parent.GetComponent<CameraPositionTracker>();
             _cameraPositionTracker.onOnCameraPositionChanged += OnRotateUI;
         }
-        
+
         private void OnDestroy()
         {
             _health.onHealthChanged -= OnHealthChanged;
@@ -59,8 +58,9 @@ namespace HP
             {
                 _isLastHit = true;
             }
+
             var damageTextObject = Instantiate(_damageTextPrefab, damageData.Target,
-                Quaternion.identity);
+                Quaternion.LookRotation(transform.position - _vectorToUIRotate, Vector3.up));
             damageTextObject.transform.SetParent(transform);
             var damageText = damageTextObject.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>();
             damageText.text = damageData.BaseDamage.ToString(CultureInfo.InvariantCulture);
@@ -70,8 +70,9 @@ namespace HP
 
         private void OnRotateUI(Vector3 newUIPosition)
         {
-            transform.LookAt(new Vector3(transform.position.x, newUIPosition.y, newUIPosition.z));
-            transform.Rotate(0, 180, 0);
+            _vectorToUIRotate = newUIPosition;
+            var position = transform.position;
+            transform.rotation = Quaternion.LookRotation(position - newUIPosition, Vector3.up);
         }
     }
 }

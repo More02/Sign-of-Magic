@@ -1,18 +1,19 @@
 ﻿using System;
 using UnityEngine;
 
-public class CameraPositionTracker: MonoBehaviour
+public class CameraPositionTracker : MonoBehaviour
 {
     private Transform _cameraTransform;
     private Vector3 _lastPosition;
-        
+
     public event Action<Vector3> onOnCameraPositionChanged;
-        
+
     private void Start()
     {
-        _lastPosition = _cameraTransform.position;
         _cameraTransform = Camera.allCameras[0].transform;
+        _lastPosition = _cameraTransform.position;
     }
+
     private void LateUpdate()
     {
         CheckCameraPosition();
