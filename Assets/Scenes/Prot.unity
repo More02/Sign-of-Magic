@@ -1535,20 +1535,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1994409430}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &911633467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911633458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9d336405bff26459713a1f3b879cab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 100
-  TypeOfElement: 0
 --- !u!114 &911633469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,18 +1550,6 @@ MonoBehaviour:
   _grabGrip:
     actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
---- !u!114 &911633470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911633458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8273f6e6bfba49c7ab8aa0784512fee2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &930406482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1397780466808792810, guid: 3781a3803ccf3cc469730fda393c13a5,
