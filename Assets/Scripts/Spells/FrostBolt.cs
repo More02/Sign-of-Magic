@@ -20,7 +20,7 @@ namespace Spells
             if (Target is null) return;
             _speed -= _lostOfValue;
             var collisionPoint = Target.contacts[0].point;
-            var healthBar = Target.gameObject.GetComponent<HealthBar>();
+            if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;
             if (health.TypeOfElement == TypeOfElement)
             {
                 health.ChangeHealth(DamageValue + _lostOfValue);
@@ -30,7 +30,7 @@ namespace Spells
             {
                 health.ChangeHealth(DamageValue + _lostOfValue);
                 await healthBar.CreateDamageText(new DamageData(DamageValue + _lostOfValue, collisionPoint, Color));
-                health.ChangeHealth( _frostDamage);
+                health.ChangeHealth(_frostDamage);
                 await healthBar.CreateDamageText(new DamageData(_frostDamage, collisionPoint, _spellColor));
             }
         }
@@ -39,7 +39,7 @@ namespace Spells
         {
             base.OnCollisionEnter(collision);
             if (!collision.gameObject.TryGetComponent<Lava>(out var lava)) return;
-            Instantiate(lava.Stone, collision.contacts[0].point, Quaternion.identity);
+            Instantiate(lava.Stone, collision.contacts[0].point, Quaternion.Euler(-90, 0, 0));
         }
     }
 }

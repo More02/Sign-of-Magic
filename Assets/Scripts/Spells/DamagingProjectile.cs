@@ -14,9 +14,12 @@ namespace Spells
 
         protected void OnCollisionEnter(Collision collision)
         {
-            if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
-            Target = collision;
-            PerformSpellAction(health);
+            if (collision.gameObject.TryGetComponent<Health>(out var health))
+            {
+                Target = collision;
+                PerformSpellAction(health);
+            }
+            Destroy(gameObject);
         }
     }
 }

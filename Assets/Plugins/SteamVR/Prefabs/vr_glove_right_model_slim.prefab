@@ -1050,8 +1050,9 @@ MonoBehaviour:
   - fallback_relaxed (MAIN)
   - fallback_point
   - fallback_fist
-  overridePreviewLeftHandPrefab: {fileID: 0}
-  overridePreviewRightHandPrefab: {fileID: 0}
+  overridePreviewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
+    type: 3}
+  overridePreviewRightHandPrefab: {fileID: 1000010304998954}
   skeletonMainPose: {fileID: 11400000, guid: 213b7d69786635c498d1287c5505990e, type: 2}
   skeletonAdditionalPoses:
   - {fileID: 11400000, guid: 416ca9f76f309e5478daf527e55b0c80, type: 2}
@@ -1374,7 +1375,7 @@ GameObject:
   - component: {fileID: 1828040000076074220}
   - component: {fileID: 6696165334466621837}
   - component: {fileID: 4295511489939982658}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1595,6 +1596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0ff16683ca0c54592cc9eb7cf7a530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _root: {fileID: 4000012125075130}
   _pointer: {fileID: 5067759165116899177}
   _spellProjectile: {fileID: 6700859090635554448, guid: cd511853e96e3c14c8fa18d3e87b4dc2,
     type: 3}
@@ -1629,7 +1631,7 @@ GameObject:
   - component: {fileID: 7321018708255315213}
   - component: {fileID: 3263297049327952534}
   - component: {fileID: 4841088397854392618}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1718,7 +1720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3120590835475202374}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.14, y: 0, z: -0.1}
+  m_LocalPosition: {x: -0.3, y: 0, z: -0.1}
   m_LocalScale: {x: 0, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1988,6 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0ff16683ca0c54592cc9eb7cf7a530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _root: {fileID: 4000012125075130}
   _pointer: {fileID: 5067759165116899177}
   _spellProjectile: {fileID: 6097730986717892632, guid: b12ce69ecd68ef844ad92796bf557500,
     type: 3}
@@ -2098,7 +2101,7 @@ GameObject:
   - component: {fileID: 260184504407238046}
   - component: {fileID: 1132696166813292603}
   - component: {fileID: 8377823171168020234}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2243,6 +2246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0ff16683ca0c54592cc9eb7cf7a530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _root: {fileID: 4000012125075130}
   _pointer: {fileID: 5067759165116899177}
   _spellProjectile: {fileID: 6524725095400337676, guid: cf4daaa16f546b74097de15817ddaf07,
     type: 3}
@@ -2278,7 +2282,7 @@ GameObject:
   - component: {fileID: 7434715466568441772}
   - component: {fileID: 8269719126115891566}
   - component: {fileID: 8365343690396720530}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: CanvasStatic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049160992850807738}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Switching UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2419,7 +2423,7 @@ GameObject:
   - component: {fileID: 7483926101012787808}
   - component: {fileID: 6524893213904878682}
   - component: {fileID: 4758940156704439240}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}

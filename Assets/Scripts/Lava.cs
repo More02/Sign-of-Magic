@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class Lava : MonoBehaviour
 {
-    [SerializeField] public GameObject Stone;
+    [SerializeField] private GameObject _stone;
     [SerializeField] private int _lavaDamage = -5;
     private TypeOfElement _typeOfElement;
     private float _lastTick;
     private readonly float _tickTime = 1f;
+
+    public GameObject Stone => _stone;
 
     private new void Start()
     {

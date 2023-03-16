@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\HP\DamageNumber.cs" />
+     <Compile Include="Assets\Scripts\Snow.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\Scripts\Spells\FrostBolt.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
@@ -55,6 +56,7 @@
      <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Lava.cs" />
      <Compile Include="Assets\Scripts\VR\ViveInputTouchpad.cs" />
+     <Compile Include="Assets\Scripts\ILivable.cs" />
      <Compile Include="Assets\Scripts\Spells\ProjectileSpell.cs" />
      <Compile Include="Assets\Scripts\Spells\TeleportationBall.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\WaterTile.cs" />

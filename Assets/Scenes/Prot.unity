@@ -460,8 +460,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240378411}
   m_LocalRotation: {x: -0, y: -0.8945458, z: -0, w: 0.44697642}
-  m_LocalPosition: {x: 140.2, y: 4.74, z: 24.699997}
-  m_LocalScale: {x: 2.4632497, y: 2.4632497, z: 2.4632497}
+  m_LocalPosition: {x: 140.38, y: 4.74, z: 26}
+  m_LocalScale: {x: 2.4632497, y: 2.4632497, z: 2.8558786}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 492794508}
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5daef7fb3d0927f439d140885b3d11d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
+  _stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
   _lavaDamage: -5
 --- !u!65 &240378417
 BoxCollider:
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5daef7fb3d0927f439d140885b3d11d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
+  _stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
   _lavaDamage: -5
 --- !u!65 &640182887
 BoxCollider:
@@ -1524,8 +1524,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1729,7 +1729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094722176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90.4, y: 4.74, z: 16.900002}
+  m_LocalPosition: {x: 90.4, y: 4.74, z: 17.16}
   m_LocalScale: {x: 1.2220284, y: 1.2220284, z: 1.2220284}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5daef7fb3d0927f439d140885b3d11d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
+  _stone: {fileID: 2446932357184617681, guid: 7269b2b46125684449c72b4212a138cf, type: 3}
   _lavaDamage: -5
 --- !u!65 &1094722182
 BoxCollider:
@@ -2025,6 +2025,7 @@ GameObject:
   - component: {fileID: 1202488809}
   - component: {fileID: 1202488808}
   - component: {fileID: 1202488807}
+  - component: {fileID: 1202488810}
   m_Layer: 3
   m_Name: TerrainSnow
   m_TagString: Terrain
@@ -2099,6 +2100,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1202488810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202488806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5401ccdde125d4499793eabe5f0e22e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _water: {fileID: 100000, guid: 9485b0c79d11e2e4d0007da98d76c639, type: 3}
+  _waterLifetime: 4
 --- !u!4 &1213447095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6773894916486426315, guid: ccd18aafe3c618345b5388af3ed0a5c7,

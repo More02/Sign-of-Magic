@@ -13,6 +13,7 @@ namespace Spells
             base.Start();
             TypeOfElement = TypeOfElement.Fire;
         }
+
         protected override async void PerformSpellAction(Health health)
         {
             if (Target is null) return;
@@ -30,6 +31,14 @@ namespace Spells
                 health.ChangeHealth(_fireDamage);
                 await healthBar.CreateDamageText(new DamageData(_fireDamage, collisionPoint, _spellColor));
             }
+        }
+        
+        private new void OnCollisionEnter(Collision collision)
+        {
+            base.OnCollisionEnter(collision);
+            if (!collision.gameObject.TryGetComponent<Snow>(out var snow)) return;
+            var water = Instantiate(snow.Water, collision.contacts[0].point, Quaternion.identity);
+            snow.StartCoroutine(ILivable.LifeCoroutine(snow.WaterLifetime, water));
         }
     }
 }

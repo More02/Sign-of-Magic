@@ -32,8 +32,9 @@ namespace Spells
             if (collision.gameObject.CompareTag("Terrain"))
             {
                 PerformSpellAction(_character.GetComponent<Health>());
-                Destroy(gameObject);
+                
             }
+            Destroy(gameObject);
         }
 
         

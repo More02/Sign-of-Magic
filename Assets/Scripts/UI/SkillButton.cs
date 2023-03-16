@@ -7,12 +7,13 @@ namespace UI
 {
    public class SkillButton : MonoBehaviour
    {
+      [SerializeField] private Transform _root;
       [SerializeField] private GameObject _pointer;
       [SerializeField] private GameObject _spellProjectile;
       [SerializeField] private GameObject _spellCast;
       [SerializeField] private UnityEvent _onPress;
       [SerializeField] private UnityEvent _onRelease;
-      
+
       private GameObject _presser;
       private bool _isPressed;
 
@@ -20,7 +21,7 @@ namespace UI
 
       private void Start()
       {
-         _player = transform.parent.parent.parent.parent;
+         _player = _root.parent.parent.parent.parent;
          _isPressed = false;
       }
 
@@ -36,7 +37,7 @@ namespace UI
 
       private void OnTriggerExit(Collider other)
       {
-         if (other == _presser)
+         if (other.gameObject == _presser)
          {
             _onRelease.Invoke();
             _isPressed = false;
