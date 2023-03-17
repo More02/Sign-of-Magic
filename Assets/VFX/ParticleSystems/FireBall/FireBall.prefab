@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6097730984880175950}
   - component: {fileID: 6097730984880175936}
   - component: {fileID: 6097730984880175937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OuterGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 6097730985538589224}
   - component: {fileID: 6097730985538589226}
   - component: {fileID: 6097730985538589227}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9644,7 +9644,7 @@ GameObject:
   - component: {fileID: 6097730986549719640}
   - component: {fileID: 6097730986549719642}
   - component: {fileID: 6097730986549719643}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InnerBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14465,7 +14465,7 @@ GameObject:
   - component: {fileID: 6097730986701122364}
   - component: {fileID: 6097730986701122366}
   - component: {fileID: 6097730986701122367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19289,7 +19289,7 @@ GameObject:
   - component: {fileID: 6097730986717892634}
   - component: {fileID: 6097730986717892635}
   - component: {fileID: 6720642201401676367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24148,4 +24148,6 @@ MonoBehaviour:
   _lifeTime: 10
   _speed: 15
   DamageValue: -15
+  _explosionSpell: {fileID: 7042613270685266255, guid: 7ae88c397750e454c8742df06d9264b4,
+    type: 3}
   _fireDamage: -5

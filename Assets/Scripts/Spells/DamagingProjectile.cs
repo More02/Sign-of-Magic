@@ -7,6 +7,7 @@ namespace Spells
     public abstract class DamagingProjectile : ProjectileSpell
     {
         [SerializeField] protected int DamageValue = -15;
+        [SerializeField] private GameObject _explosionSpell;
         protected TypeOfElement TypeOfElement;
         protected Color Color = new Color(0.82f, 0.09f, 1f);
 
@@ -20,6 +21,11 @@ namespace Spells
                 PerformSpellAction(health);
             }
             Destroy(gameObject);
+        }
+
+        private void OnDestroy()
+        {
+            var exp = Instantiate(_explosionSpell, transform);
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4756727767710100581}
   - component: {fileID: 2247848544986704199}
   - component: {fileID: 5242540984678095238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,7 @@ GameObject:
   - component: {fileID: 5721061008827471265}
   - component: {fileID: 4200479453889368447}
   - component: {fileID: 194251943035473974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FrostBoltCast
   m_TagString: Untagged
   m_Icon: {fileID: 0}

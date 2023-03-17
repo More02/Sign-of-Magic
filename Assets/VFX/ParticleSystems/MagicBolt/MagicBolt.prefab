@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8106313197316408313}
   - component: {fileID: 5622105645904369598}
   - component: {fileID: 3668877004978172253}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4835,7 +4835,7 @@ GameObject:
   - component: {fileID: 6524725095400337906}
   - component: {fileID: 6524725095400337907}
   - component: {fileID: -7539272934433023637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MagicBolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9685,6 +9685,8 @@ MonoBehaviour:
   _lifeTime: 10
   _speed: 35
   DamageValue: -15
+  _explosionSpell: {fileID: 1884231974094641151, guid: 1961e7d706310ed44b71c94fde7f2f50,
+    type: 3}
 --- !u!1 &6524725096113868524
 GameObject:
   m_ObjectHideFlags: 0
@@ -9696,7 +9698,7 @@ GameObject:
   - component: {fileID: 6524725096113868499}
   - component: {fileID: 6524725096113868497}
   - component: {fileID: 6524725096113868498}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14518,7 +14520,7 @@ GameObject:
   - component: {fileID: 7693230596086130125}
   - component: {fileID: 8406524977065884999}
   - component: {fileID: 4107728154933809438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OuterGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

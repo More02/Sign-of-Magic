@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3213438257073946259}
   - component: {fileID: 306731722736488217}
   - component: {fileID: 5162260436049915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4833,7 +4833,7 @@ GameObject:
   - component: {fileID: 3883100230376039538}
   - component: {fileID: 6113807950390096844}
   - component: {fileID: 7703261612641238021}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OuterGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9648,7 +9648,7 @@ GameObject:
   - component: {fileID: 7024542418862039389}
   - component: {fileID: 34336696952611064}
   - component: {fileID: 4658822235275834777}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FrostBolt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14497,6 +14497,8 @@ MonoBehaviour:
   _lifeTime: 10
   _speed: 45
   DamageValue: -15
+  _explosionSpell: {fileID: 4586187880505157370, guid: 92c41f203edf02d4ebec615e6ef736a4,
+    type: 3}
   _frostDamage: -4
   _lostOfValue: 2
 --- !u!1 &7068539053006159884
@@ -14510,7 +14512,7 @@ GameObject:
   - component: {fileID: 8489304926214283292}
   - component: {fileID: 411794200057439486}
   - component: {fileID: 6005250188623748172}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
