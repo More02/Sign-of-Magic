@@ -11,8 +11,9 @@ namespace UI
       [SerializeField] private GameObject _pointer;
       [SerializeField] private GameObject _spellProjectile;
       [SerializeField] private GameObject _spellCast;
-      [SerializeField] private UnityEvent _onPress;
-      [SerializeField] private UnityEvent _onRelease;
+      
+      public UnityEvent _onPress;
+      public UnityEvent _onRelease;
 
       private GameObject _presser;
       private bool _isPressed;
@@ -23,6 +24,13 @@ namespace UI
       {
          _player = _root.parent.parent.parent.parent;
          _isPressed = false;
+
+         if (_player.TryGetComponent<ViveInputGrab>(out var playerGrab))
+         {
+            if (name.Contains("1")) playerGrab.FirstSkillEvent = _onPress;
+            else if (name.Contains("2")) playerGrab.FirstSkillEvent = _onPress;
+            else if (name.Contains("3")) playerGrab.FirstSkillEvent = _onPress;
+         }
       }
 
       private void OnTriggerEnter(Collider other)

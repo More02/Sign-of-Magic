@@ -48,7 +48,7 @@
      <Compile Include="Assets\Terrain\Water\Water\Scripts\PlanarReflection.cs" />
      <Compile Include="Assets\Terrain\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Scripts\VR\Movement.cs" />
-     <Compile Include="Assets\Scripts\VR\ViveInputGrabShowUI.cs" />
+     <Compile Include="Assets\Scripts\VR\ViveInputGrab.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\GerstnerDisplace.cs" />
      <Compile Include="Assets\Scripts\HP\Health.cs" />
      <Compile Include="Assets\Scripts\Spells\ProjectileExplotion.cs" />

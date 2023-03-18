@@ -21,7 +21,8 @@ namespace VR
                     playerSpellClass.RightSpellTransform = _spellTransform;
                 }
             }
-            if (player.TryGetComponent<ViveInputGrabShowUI>(out var playerGrabClass))
+            
+            if (player.TryGetComponent<ViveInputGrab>(out var playerGrabClass))
             {
                 if (gameObject.name.Contains("right"))
                 {
