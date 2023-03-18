@@ -1,5 +1,7 @@
+using System;
 using HP;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class Lava : MonoBehaviour
 {
@@ -11,14 +13,16 @@ public class Lava : MonoBehaviour
 
     public GameObject Stone => _stone;
 
-    private new void Start()
+    private void Start()
     {
         _typeOfElement = TypeOfElement.Fire;
     }
 
-    protected void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        if (!collision.gameObject.TryGetComponent<Health>(out var health)) return;
+        Debug.Log(other.name);
+        var health = other.gameObject.GetComponentInParent<Health>();
+        if (health is null) return;
         if (Time.time < _lastTick + _tickTime) return;
         _lastTick = Time.time;
         DoLavaDamage(health);

@@ -5,7 +5,7 @@ namespace Spells
 {
     public class MagicBolt : DamagingProjectile
     {
-        protected override async void PerformSpellAction(Health health)
+        protected override async void DealDamage(Health health)
         {
             if (Target is null) return;
             var collisionPoint = Target.contacts[0].point;

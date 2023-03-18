@@ -14,7 +14,7 @@ namespace Spells
             TypeOfElement = TypeOfElement.Fire;
         }
 
-        protected override async void PerformSpellAction(Health health)
+        protected override async void DealDamage(Health health)
         {
             if (Target is null) return;
             if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;

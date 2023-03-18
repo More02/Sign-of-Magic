@@ -1,6 +1,7 @@
 using System;
 using HP;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 namespace Spells
 {
@@ -12,13 +13,22 @@ namespace Spells
         protected Color Color = new Color(0.82f, 0.09f, 1f);
 
         protected Collision Target;
+        
+        protected abstract void DealDamage(Health health);
+        
+        protected override void PerformSpellAction()
+        {
+            DealDamage(Target.gameObject.GetComponentInParent<Health>());
+        }
 
         protected void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.TryGetComponent<Health>(out var health))
+            //if (collision.gameObject.TryGetComponent<Health>(out var health))
+           
+            if (collision.gameObject.layer == 8)
             {
                 Target = collision;
-                PerformSpellAction(health);
+                PerformSpellAction();
             }
             Destroy(gameObject);
         }

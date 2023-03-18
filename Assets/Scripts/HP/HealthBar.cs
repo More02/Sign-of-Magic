@@ -2,6 +2,7 @@ using System.Globalization;
 using System.Threading.Tasks;
 using Spells;
 using TMPro;
+using UI;
 using UnityEngine;
 using UnityEngine.UI;
 

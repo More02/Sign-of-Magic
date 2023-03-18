@@ -15,7 +15,7 @@ namespace Spells
             TypeOfElement = TypeOfElement.Ice;
         }
 
-        protected override async void PerformSpellAction(Health health)
+        protected override async void DealDamage(Health health)
         {
             if (Target is null) return;
             _speed -= _lostOfValue;

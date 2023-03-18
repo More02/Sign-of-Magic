@@ -45,5 +45,7 @@ namespace HP
             var currentHealthAsPercange = (float)_currentHealth / _maxHealth;
             onHealthChanged?.Invoke(new HealthData(currentHealthAsPercange, _currentHealth));
         }
+
+        
     }
 }

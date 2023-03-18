@@ -13,7 +13,7 @@ namespace Spells
             set => _character = value;
         }
 
-        protected override void PerformSpellAction(Health health)
+        protected override void PerformSpellAction()
         {
             if (_character is not null)
             {
@@ -31,7 +31,7 @@ namespace Spells
         {
             if (collision.gameObject.CompareTag("Terrain"))
             {
-                PerformSpellAction(_character.GetComponent<Health>());
+                PerformSpellAction();
                 
             }
             Destroy(gameObject);

@@ -13,7 +13,7 @@ namespace Spells
 
         public float TimeToCast => _timeToCast;
 
-        protected abstract void PerformSpellAction(Health health);
+        protected abstract void PerformSpellAction();
 
         protected void Start()
         {
