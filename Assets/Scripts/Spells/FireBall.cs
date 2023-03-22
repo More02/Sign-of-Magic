@@ -16,8 +16,10 @@ namespace Spells
 
         protected override async void DealDamage(Health health)
         {
-            if (Target is null) return;
-            if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;
+            if (health is null) return;
+            var healthBar = health.transform.GetChild(0).GetChild(0).GetComponent<HealthBar>();
+            if (healthBar is null) return;
+            //if (!Target.transform.GetChild(0).GetChild(0).TryGetComponent<HealthBar>(out var healthBar)) return;
             var collisionPoint = Target.contacts[0].point;
             if (health.TypeOfElement == TypeOfElement)
             {

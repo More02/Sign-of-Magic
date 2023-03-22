@@ -24,18 +24,15 @@ namespace Spells
         protected void OnCollisionEnter(Collision collision)
         {
             //if (collision.gameObject.TryGetComponent<Health>(out var health))
-           
-            if (collision.gameObject.layer == 8)
-            {
-                Target = collision;
-                PerformSpellAction();
-            }
+            
+            Target = collision;
+            PerformSpellAction();
             Destroy(gameObject);
         }
 
         private void OnDestroy()
         {
-            var exp = Instantiate(_explosionSpell, transform);
+            var exp = Instantiate(_explosionSpell, transform.position, Quaternion.identity);
         }
     }
 }
