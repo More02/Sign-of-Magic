@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 453
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -331,9 +331,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 262}
-    m_SelectedIDs: 0c830000
-    m_LastClickedID: 33548
-    m_ExpandedIDs: 00000000587600005a7600005c7600005e7600006076000062760000647600006676000068760000747600007a76000086760000787700009077000000ca9a3b
+    m_SelectedIDs: d4760000
+    m_LastClickedID: 30420
+    m_ExpandedIDs: 000000005a7600005c7600005e76000060760000627600006476000066760000687600006a760000ac76000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000587600005a7600005c7600005e7600006076000062760000647600006676000068760000
+    m_ExpandedIDs: 000000005a7600005c7600005e76000060760000627600006476000066760000687600006a760000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 86670000
-      m_LastClickedID: 26502
-      m_ExpandedIDs: f6faffff
+      m_SelectedIDs: 2e110000
+      m_LastClickedID: 0
+      m_ExpandedIDs: fefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 5.484812, y: -4.0232487, z: 4.127929}
     speed: 2
-    m_Value: {x: -0.42019904, y: 0.0044113784, z: 0.52950597}
+    m_Value: {x: 5.484812, y: -4.0232487, z: 4.127929}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -827,11 +827,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.20267971, y: 0.4488585, z: -0.10524436, w: 0.86398846}
     speed: 2
-    m_Value: {x: 0.21421207, y: -0.031638566, z: 0.006945147, w: 0.97624993}
+    m_Value: {x: 0.20267971, y: 0.4488585, z: -0.10524436, w: 0.86398846}
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 0.06703502
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2

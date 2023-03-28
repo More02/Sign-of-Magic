@@ -28,8 +28,8 @@ namespace UI
          if (_player.TryGetComponent<ViveInputGrab>(out var playerGrab))
          {
             if (name.Contains("1")) playerGrab.FirstSkillEvent = _onPress;
-            else if (name.Contains("2")) playerGrab.FirstSkillEvent = _onPress;
-            else if (name.Contains("3")) playerGrab.FirstSkillEvent = _onPress;
+            else if (name.Contains("2")) playerGrab.SecondSkillEvent = _onPress;
+            else if (name.Contains("3")) playerGrab.ThirdSkillEvent = _onPress;
          }
       }
 

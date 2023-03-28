@@ -71,7 +71,7 @@ namespace VR
         private void OnLeftTriigerUp(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
             Destroy(_leftSpell);
-            var spell = Instantiate(_leftProjectile, _leftSpellTransform.position - _leftSpellTransform.right.normalized * 0.3f, _leftSpellTransform.rotation);
+            var spell = Instantiate(_leftProjectile, _leftSpellTransform.position + _leftSpellTransform.right.normalized * 0.5f, _leftSpellTransform.rotation);
             if (Time.time < _leftTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
             if (spell.TryGetComponent<TeleportationBall>(out var spellScript))
             {
@@ -89,7 +89,7 @@ namespace VR
         private void OnRightTriigerUp(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)
         {
             Destroy(_rightSpell);
-            var spell = Instantiate(_rightProjectile, _rightSpellTransform.position  - _rightSpellTransform.right.normalized * 0.3f, _rightSpellTransform.rotation);
+            var spell = Instantiate(_rightProjectile, _rightSpellTransform.position  + _rightSpellTransform.right.normalized * 0.5f, _rightSpellTransform.rotation);
             if (Time.time < _rightTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
         }
     
