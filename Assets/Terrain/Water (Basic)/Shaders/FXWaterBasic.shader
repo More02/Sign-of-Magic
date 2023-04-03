@@ -30,14 +30,12 @@ struct v2f {
 	float2 bumpuv[2] : TEXCOORD0;
 	float3 viewDir : TEXCOORD2;
 	UNITY_FOG_COORDS(3)
-	UNITY_VERTEX_OUTPUT_STEREO
 };
 
 v2f vert(appdata v)
 {
 	v2f o;
 	float4 s;
-	UNITY_SETUP_INSTANCE_ID(v);
 	o.pos = UnityObjectToClipPos(v.vertex);
 
 	// scroll bump waves

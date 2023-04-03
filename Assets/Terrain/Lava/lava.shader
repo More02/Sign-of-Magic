@@ -8,9 +8,6 @@
 			#pragma vertex vertex_shader
 			#pragma fragment pixel_shader
 			#include "UnityCG.cginc"
-
-			UNITY_SETUP_INSTANCE_ID(v)
-			UNITY_VERTEX_OUTPUT_STEREO
 			
 			float hash (float3 n)   //generate pseudorandom number in range[0..1]
 			{
@@ -46,7 +43,6 @@
 			
 			void vertex_shader (inout float4 vertex:POSITION,inout float2 uv:TEXCOORD0)
 			{
-				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 				vertex = UnityObjectToClipPos(vertex);
 			}
 			
