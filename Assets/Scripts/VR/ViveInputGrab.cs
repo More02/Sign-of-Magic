@@ -17,7 +17,7 @@ namespace VR
         private UnityEvent _firstSkillEvent;
         private UnityEvent _secondSkillEvent;
         private UnityEvent _thirdSkillEvent;
-        private int _skillState = 1;
+        private int _skillState;
 
         public UnityEvent FirstSkillEvent
         {
@@ -43,6 +43,8 @@ namespace VR
             _grabGrip.AddOnStateUpListener(OnGrabGripClickedUp, _leftHand);
             
             _grabGrip.AddOnStateDownListener(OnGrabGripRightClickedDown, _rightHand);
+
+            _skillState = 1;
         }
 
         private void OnGrabGripRightClickedDown(SteamVR_Action_Boolean fromaction, SteamVR_Input_Sources fromsource)

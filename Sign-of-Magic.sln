@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR_Actions", "SteamVR_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2d3b669a-6a63-386d-6a98-433ee0d1bda2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{80ec7105-648a-9700-401b-0dfbd0e26cfc}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR_Input_Editor", "SteamVR_Input_Editor.csproj", "{5cdeaac5-2e24-74f2-f6c3-5c99e9ea1b27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR_Editor", "SteamVR_Editor.csproj", "{3aca5fd8-9926-0395-6dff-f8d013c0fa5d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR_Windows_EditorHelper", "SteamVR_Windows_EditorHelper.csproj", "{3d3ab693-18b8-177f-fa1b-dfbca5b96d36}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{80ec7105-648a-9700-401b-0dfbd0e26cfc}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +26,14 @@ Global
 		{cd41bfed-a7c2-dbae-8eaf-8621819ac78c}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2d3b669a-6a63-386d-6a98-433ee0d1bda2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2d3b669a-6a63-386d-6a98-433ee0d1bda2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80ec7105-648a-9700-401b-0dfbd0e26cfc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80ec7105-648a-9700-401b-0dfbd0e26cfc}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5cdeaac5-2e24-74f2-f6c3-5c99e9ea1b27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5cdeaac5-2e24-74f2-f6c3-5c99e9ea1b27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3aca5fd8-9926-0395-6dff-f8d013c0fa5d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3aca5fd8-9926-0395-6dff-f8d013c0fa5d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3d3ab693-18b8-177f-fa1b-dfbca5b96d36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3d3ab693-18b8-177f-fa1b-dfbca5b96d36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80ec7105-648a-9700-401b-0dfbd0e26cfc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80ec7105-648a-9700-401b-0dfbd0e26cfc}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,7 +39,8 @@ namespace Spells
         {
             base.OnCollisionEnter(collision);
             if (!collision.gameObject.TryGetComponent<Snow>(out var snow)) return;
-            var water = Instantiate(snow.Water, collision.contacts[0].point, Quaternion.identity);
+            var contactPoint = collision.contacts[0].point - collision.contacts[0].normal.normalized * 0.25f;
+            var water = Instantiate(snow.Water,contactPoint , Quaternion.LookRotation(contactPoint,collision.contacts[0].normal));
             snow.StartCoroutine(ILivable.LifeCoroutine(snow.WaterLifetime, water));
         }
     }

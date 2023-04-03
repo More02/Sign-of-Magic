@@ -11,6 +11,9 @@ Properties {
 
 CGINCLUDE
 
+#pragma vertex vert
+#pragma fragment frag
+#pragma multi_compile_instancing
 #include "UnityCG.cginc"
 
 uniform float4 _horizonColor;
@@ -23,12 +26,15 @@ uniform float4 _WaveOffset;
 struct appdata {
 	float4 vertex : POSITION;
 	float3 normal : NORMAL;
+	UNITY_VERTEX_INPUT_INSTANCE_ID
 };
 
 struct v2f {
 	float4 pos : SV_POSITION;
 	float2 bumpuv[2] : TEXCOORD0;
 	float3 viewDir : TEXCOORD2;
+	UNITY_VERTEX_INPUT_INSTANCE_ID
+    UNITY_VERTEX_OUTPUT_STEREO
 	UNITY_FOG_COORDS(3)
 };
 
@@ -48,9 +54,14 @@ v2f vert(appdata v)
 	// object space view direction
 	o.viewDir.xzy = normalize( WorldSpaceViewDir(v.vertex) );
 
+	UNITY_SETUP_INSTANCE_ID(v);
+    UNITY_TRANSFER_INSTANCE_ID(v, o);
+    UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 	UNITY_TRANSFER_FOG(o,o.pos);
 	return o;
 }
+
+UNITY_DECLARE_SCREENSPACE_TEXTURE(_MainTex);
 
 ENDCG
 
@@ -60,8 +71,6 @@ Subshader {
 	Pass {
 
 CGPROGRAM
-#pragma vertex vert
-#pragma fragment frag
 #pragma multi_compile_fog
 
 sampler2D _BumpMap;
@@ -80,6 +89,7 @@ half4 frag( v2f i ) : COLOR
 	col.rgb = lerp( water.rgb, _horizonColor.rgb, water.a );
 	col.a = _horizonColor.a;
 
+	UNITY_SETUP_INSTANCE_ID(i);
 	UNITY_APPLY_FOG(i.fogCoord, col);
 	return col;
 }

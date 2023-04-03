@@ -854,6 +854,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{80ec7105-648a-9700-401b-0dfbd0e26cfc}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{5cdeaac5-2e24-74f2-f6c3-5c99e9ea1b27}</Project>
       <Name>SteamVR_Input_Editor</Name>
