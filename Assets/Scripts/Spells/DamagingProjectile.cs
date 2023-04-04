@@ -11,6 +11,8 @@ namespace Spells
         [SerializeField] private GameObject _explosionSpell;
         protected TypeOfElement TypeOfElement;
         protected Color Color = new Color(0.82f, 0.09f, 1f);
+        private bool _hited;
+        
         private bool _castEnd;
 
         protected Collision Target;
@@ -30,10 +32,11 @@ namespace Spells
         protected void OnCollisionEnter(Collision collision)
         {
             //if (collision.gameObject.TryGetComponent<Health>(out var health))
-            
+            if (_hited) return;
             Target = collision;
             PerformSpellAction();
             Destroy(gameObject);
+            _hited = true;
         }
 
         private void OnDestroy()
