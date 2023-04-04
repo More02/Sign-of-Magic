@@ -4,6 +4,8 @@
 
 [Видео](https://drive.google.com/file/d/1eJfrREnC74UGLQ2q3yiUQ3fuvXoU4_-3/view?usp=share_link)
 
+[Билд](https://github.com/Keyght/Sign-of-Magic/releases/tag/%23Prototype)
+
 ---
 
 # Images
