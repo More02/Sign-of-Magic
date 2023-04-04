@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\UI\SkillButton.cs" />
      <Compile Include="Assets\Terrain\Water\Water\Scripts\Water.cs" />
      <Compile Include="Assets\Scripts\HP\TypeOfElement.cs" />
+     <Compile Include="Assets\Scripts\Reloader.cs" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_rift.json" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_logitech_stylus.json" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive.json" />
