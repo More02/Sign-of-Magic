@@ -3,7 +3,6 @@ using Valve.VR;
 
 namespace VR
 {
-    [RequireComponent(typeof(CharacterController))]
     public class ViveInputTouchpad : MonoBehaviour
     {
         private SteamVR_Input_Sources _hand;
@@ -42,7 +41,7 @@ namespace VR
             _vectorFromHand = _touchPos.GetAxis(_hand);
             if (((!(_vectorFromHand.y > 0.7f)) && (!(_vectorFromHand.y < -0.7f)) && (!(_vectorFromHand.x > 0.7f)) &&
                  (!(_vectorFromHand.x < -0.7f)))) return;
-            Movement.Move(_vectorFromHand, _characterController, _speed, _cameraTransform);
+            Movement.Move(_vectorFromHand, transform, _speed, _cameraTransform);
         }
     }
 }

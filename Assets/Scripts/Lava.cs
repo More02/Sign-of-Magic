@@ -20,7 +20,6 @@ public class Lava : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log(other.name);
         var health = other.gameObject.GetComponentInParent<Health>();
         if (health is null) return;
         if (Time.time < _lastTick + _tickTime) return;

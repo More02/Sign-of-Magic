@@ -11,8 +11,14 @@ namespace Spells
         [SerializeField] private GameObject _explosionSpell;
         protected TypeOfElement TypeOfElement;
         protected Color Color = new Color(0.82f, 0.09f, 1f);
+        private bool _castEnd;
 
         protected Collision Target;
+
+        public void Casted()
+        {
+            _castEnd = true;
+        }
         
         protected abstract void DealDamage(Health health);
         
@@ -32,7 +38,7 @@ namespace Spells
 
         private void OnDestroy()
         {
-            var exp = Instantiate(_explosionSpell, transform.position, Quaternion.identity);
+            if (_castEnd) Instantiate(_explosionSpell, transform.position, Quaternion.identity);
         }
     }
 }

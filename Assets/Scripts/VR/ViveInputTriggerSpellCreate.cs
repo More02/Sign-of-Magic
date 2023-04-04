@@ -91,6 +91,7 @@ namespace VR
             Destroy(_rightSpell);
             var spell = Instantiate(_rightProjectile, _rightSpellTransform.position  + _rightSpellTransform.right.normalized * 0.5f, _rightSpellTransform.rotation);
             if (Time.time < _rightTimer + spell.GetComponent<ProjectileSpell>().TimeToCast) Destroy(spell);
+            else  spell.GetComponent<DamagingProjectile>().Casted();
         }
     
         private static GameObject CastSpell(GameObject spellCast, Transform castTransform)

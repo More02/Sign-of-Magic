@@ -85,7 +85,6 @@
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive_tracker_camera.json" />
      <None Include="Assets\Terrain\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_vive_cosmos.json" />
-     <None Include="Assets\Terrain\Lava\lava.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\binding_holographic_hmd.json" />
      <None Include="Assets\Terrain\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\StreamingAssets\SteamVR\bindings_vive_controller.json" />
